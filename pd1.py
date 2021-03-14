@@ -1,6 +1,6 @@
 # zad 1
 # a = str("Hello World")
-#
+
 # b = 37
 # c = 40.2
 # d = 2 + 3j
