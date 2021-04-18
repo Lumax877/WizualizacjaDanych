@@ -1,17 +1,8 @@
-import random
-
-
 # zad 1
-# rand = []
-# i = 0
-# while i != 5:
-#     r = random.randint(0, 100)
-#     if r % 4 == 0:
-#         rand.append(r)
-#         i = i + 1
-# a = open('zad1.txt', 'a')
+# rand = [a for a in range(0,33) if a % 4 == 0]
+# a = open('zad1.txt', 'w')
 # for e in rand:
-#     a.write(str(e) + '\n')
+#     a.write(str(e) + ' ')
 # a.close()
 
 # zad 2
@@ -38,10 +29,10 @@ import random
 #         self.cena_jed = cena_jed
 #
 #     def wyswietl_produkt(self):
-#         return self.nazwa_produktu
+#         return ("Produkt to {}".format(self.nazwa_produktu))
 #
 #     def ile_produktu(self):
-#         return f'{self.ilosc} {self.jednostka_miary}'
+#         return ("{} {}".format(self.ilosc, self.jednostka_miary))
 #
 #     def ile_kosztuje(self):
 #         return self.ilosc * self.cena_jed
