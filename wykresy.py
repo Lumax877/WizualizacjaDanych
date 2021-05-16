@@ -32,3 +32,10 @@ import matplotlib.pyplot as plt
 # grupa = df.where(df['Rok'] > 2012).groupby(['Plec']).agg({'Liczba': {'sum'}})
 # wykres = grupa.plot.pie(subplots=True, fontsize=20)
 # plt.show()
+
+# zad 4
+
+# df = pd.read_csv('zamowienia.csv', header=0, sep=";", decimal=",")
+# a = df['Sprzedawca'].value_counts()
+# wykres = a.plot.bar(figsize = (8,8))
+# plt.show()

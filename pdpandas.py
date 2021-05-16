@@ -29,13 +29,13 @@ import openpyxl
 
 # zad 3
 
-df = pd.read_csv('zamowienia.csv', header=0, sep=";", decimal=",")
+# df = pd.read_csv('zamowienia.csv', header=0, sep=";", decimal=",")
 
 # a = df.drop_duplicates(subset="Sprzedawca")
 # sprzedawcy = a['Sprzedawca']
 # print(sprzedawcy)
 
-# top 5
+# print(df.sort_values('Utarg', ascending=False).head(5)) # z jakiegos powodu nie dziala
 
 # a = df['Sprzedawca'].value_counts()
 # print(a)
@@ -43,10 +43,14 @@ df = pd.read_csv('zamowienia.csv', header=0, sep=";", decimal=",")
 # a = df['Kraj'].value_counts()
 # print(a)
 
-
-# a = df[(df["Kraj"] == "Polska")]# nie mam pomyslu na znalezienie roku 2005, bo kolumna nie jest napisana w datetime type
-# b = a['Kraj'].value_counts()
+rok = pd.DatetimeIndex(df['Data zamowienia']).year
+# a = df[(df["Kraj"] == "Polska") & (rok == 2005)]
+# b = a['Sprzedawca'].value_counts()
 # print(b)
 
+#sredniakwota
 
-
+# dane_2004 = df.loc[(rok == 2004)]
+# dane_2005 = df.loc[(rok == 2005)]
+# dane_2004.to_csv('zamowienia_2004.csv', index=False)
+# dane_2005.to_csv('zamowienia_2005.csv', index=False)
