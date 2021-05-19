@@ -13,11 +13,15 @@ from math import *
 # plt.legend()
 # plt.show()
 
-# zad 3
+# zad 3 ala 4
 
-x = np.arange(np.pi,46,0.1)
-y1 = np.sin(x)
-y2 = np.cos(x) # asfias90f8as0f9
-plt.plot(x, y1, 'r', x, y2, 'b')
-plt.axis(xmin=0,xmax=45,ymin=-1,ymax=3)
-plt.show()
+# x = np.arange(0,45,0.1)
+# y1 = np.sin(x)+2
+# y2 = np.sin(x+np.pi) # asfias90f8as0f9
+# plt.plot(x, y1, 'r', x, y2, 'b', label='sin(x)')
+# plt.axis(xmin=-1,xmax=46,ymin=-1.25,ymax=3.25)
+# plt.title('Wykres sin(x)')
+# plt.xlabel('x')
+# plt.ylabel('sin(x)')
+# plt.legend(loc=6)
+# plt.show()
